@@ -39,9 +39,9 @@
   
   <main class='contact'>
     <h1>Contact Me</h1>
-    <h2>Hello, please fill out this form and I'll get back to you as soon as I can!</h2>
+    <h2>Hello, please fill out this form and I'll get back to you as soon as I can!</h2><hr>
     <section>
-      <form action='https://formspree.io/f/maygvwnk' method="post" onsubmit="this.reset()">
+      <form action='https://formspree.io/f/maygvwnk' method="post">
         <div>
           <h3>What is your name?*</h3>
           <label for='form_name'><input type='text' placeholder='Type name here...' name='form_name' id='form_name' required></label>
@@ -60,13 +60,13 @@
 
         <div>
           <h3>Is it personal or business related?</h3>
-          <label for='personal'><input type='radio' id='personal' name='personal_business' value='personal'>Personal</label>
-          
-          <label for='business'><input type='radio' id='business' name='personal_business' value='business'>Business</label>
+          <span style='display: inline-block; width: 250px;'><label for='personal'><input type='radio' id='personal' name='personal_business' value='personal'>Personal</label></span>
+          <span style='display: inline-block; width: 250px;'><label for='business'><input type='radio' id='business' name='personal_business' value='business'>Business</label></span>
         </div>
         
-        <div style='margin-top: 20px; margin-bottom: 20px;'>
-          <button type='submit' id='submit_button' name='submit_button' value='Submit'>Submit</button>
+        <div >
+          <button style='margin-top: 20px; margin-bottom: 20px; width: 250px;' type='submit' id='submit_button' name='submit_button' value='Submit'>Submit</button>
+          <button style='margin-top: 20px; margin-bottom: 20px; width: 250px;' type='reset' id='clear_button' name='clear_button' value='Clear'>Clear</button>
         </div>
       </form>
     </section>
