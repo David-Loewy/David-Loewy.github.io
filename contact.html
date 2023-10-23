@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header style='position: sticky;'>
+    <section style='display: flex; justify-content: space-between;'>
+      <div style='width: 360px;'>
+        <a href='index.html'><img src='Lambda_transparent.png' width='80' height='80'></a>
+      </div>
+
+      <h1 style='display: inline-flex;'>David Loewy</h1>
+
+      <div class='social_media'>
+        <a href="https://www.linkedin.com/in/davidloewy12/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/David-Loewy/" class="fa fa-github" target="_blank"></a>
+        <a href="https://www.instagram.com/dav.loewy/" class="fa fa-instagram" target="_blank"></a>
+        <a href="https://www.facebook.com/profile.php?id=100070101855926" class="fa fa-facebook" target="_blank"></a>
+      </div>
+    </section>
+
+    <nav class='nav'>
+      <ul>
+        <li><a href='index.html'><strong>Home</strong></a></li>
+        <li><a href='education.html'><strong>Education</strong></a></li>
+        <li><a href='projects.html'><strong>Projects</strong></a></li>
+        <li><a href='contact.html'><strong>Contact Me</strong></a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+  
+  <main class='contact'>
+    <h1>Contact Me</h1>
+    <h2>Hello, please fill out this form and I'll get back to you as soon as I can!</h2><hr>
+    <section>
+      <form action='https://formspree.io/f/maygvwnk' method="post">
+        <div>
+          <h3>What is your name?*</h3>
+          <label for='form_name'><input type='text' placeholder='Type name here...' name='form_name' id='form_name' required></label>
+        </div>
+          
+        <div>
+          <h3>What is your email?*</h3>
+          <label for='form_email'><input type='text' placeholder='Type email here...' name='form_email' id='form_email' required></label>
+        </div>
+          
+        <div>
+          <h3>What are you inquiring about?*</h3>
+          <label for='form_inquiry'><textarea placeholder='Type message here...' rows=5 cols=30 name='form_inquiry' id='form_inquiry' required></textarea></label>
+          <br>
+        </div>
+
+        <div>
+          <h3>Is it personal or business related?</h3>
+          <span style='display: inline-block; width: 250px;'><label for='personal'><input type='radio' id='personal' name='personal_business' value='personal'>Personal</label></span>
+          <span style='display: inline-block; width: 250px;'><label for='business'><input type='radio' id='business' name='personal_business' value='business'>Business</label></span>
+        </div>
+        
+        <div >
+          <button style='margin-top: 20px; margin-bottom: 20px; width: 250px;' type='submit' id='submit_button' name='submit_button' value='Submit'>Submit</button>
+          <button style='margin-top: 20px; margin-bottom: 20px; width: 250px;' type='reset' id='clear_button' name='clear_button' value='Clear'>Clear</button>
+        </div>
+      </form>
+    </section>
+    
+  </main>
+
+  <footer>
+    <hr>
+    <p>&#169; David Loewy 2023</p>
+    <hr>
+  </footer>
+
+  <script type='javascript'>
+  
+  </script>
+  
+</body>
+
+</html>
