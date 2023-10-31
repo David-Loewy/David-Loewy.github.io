@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>David Loewy's Website</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="Lambda_transparent.png" type="image/icon type">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Loewy's Website</title>
+    <link rel="icon" href="Lambda_transparent.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
 <body>
-  <header style='position: sticky;'>
-    <section style='display: flex; justify-content: space-between;'>
-      <div style='width: 360px;'>
-        <a href='index.html'><img src='Lambda_transparent.png' width='80' height='80'></a>
+  <header>
+    <div class='container-fluid bg-light'>
+      <div class='row'>
+        <div class='col-4'>
+          <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <div class='row'>
+                <div class='col'>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html"><h2><strong>Home</strong></h2></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="education.html"><h2><strong>Education</strong></h2></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="projects.html"><h2><strong>Projects</strong></h2></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><h2><strong>Contact Me</strong></h2></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+            </div>
+          </nav>
+        </div>
+        <div class='col-4'>
+          <h1 style='text-align: center; font-size: 2rem; color: #b33636'>David Loewy</h1>
+        </div>
+        <div class='col-4'>
+          <a style='float: right;' href='index.html'><img src="Lambda_transparent.png" width="70" height="70" alt="Logo"></a>
+        </div>
       </div>
-
-      <h1 style='display: inline-flex;'>David Loewy</h1>
-
-      <div class='social_media'>
-        <a href="https://www.linkedin.com/in/davidloewy12/" class="fa fa-linkedin" target="_blank"></a>
-        <a href="https://github.com/David-Loewy/" class="fa fa-github" target="_blank"></a>
-        <a href="https://www.instagram.com/dav.loewy/" class="fa fa-instagram" target="_blank"></a>
-        <a href="https://www.facebook.com/profile.php?id=100070101855926" class="fa fa-facebook" target="_blank"></a>
-      </div>
-    </section>
-
-    <nav class='nav'>
-      <ul>
-        <li><a href='index.html'><strong>Home</strong></a></li>
-        <li><a href='education.html'><strong>Education</strong></a></li>
-        <li><a href='projects.html'><strong>Projects</strong></a></li>
-        <li><a href='contact.html'><strong>Contact Me</strong></a></li>
-      </ul>
-    </nav>
-    <hr>
+    </div>
   </header>
-  
-  <main class='projects'>
-    <h1>Projects</h1>
-    <hr>
-    
-    <section>
-      <h2>This Website!</h2>
-      <img src='website_screenshot.PNG' width=633 height=350>
-      <p>I love HTML/CSS, and have had a lot of fun coding it.</p>
-      <hr>
-    </section>
-    
-    <section>
-      <h2>Airbnbs in Chicago</h2>
-      <img src='project1.PNG' width=633 height=350>
-      <p>In this group project, our team was tasked to be a consulting group looking at Airbnbs in Chicago. We found correlations and visualized them in our <a href='https://docs.google.com/presentation/d/1sBQlnOZzxg3gu_hlhzGttC8Fm7EZMo7bk-dthEt-WJc/edit?usp=sharing' target='_blank'>presentation</a>.</p>
-      <hr>
-    </section>
 
-    <section>
-      <h2>Heart Disease Presentation</h2>
-      <img src='project2.png' width=633 height=350>
-      <p>In this group project, our team was given data regarding heart disease. It included a variety of variables, and our task was to determine the statistically significant variables that would lead to heart disease. We also created predictive models and improved upon them in the <a href='https://docs.google.com/presentation/d/1ulGLS84UhT-75orD1XM-J9OZ8Es1h-BUmozs4hKQhSg/edit?usp=sharing' target='_blank'>presentation</a>.</p>
-    </section>
+  <main class='projects'>
+    
+    <div class='container'>
+      <div class='row'>
+        <h1>Projects</h1>
+      </div>
+      <hr>
+      
+      <div class='row'>
+      <section>
+        <h2>This Website!</h2>
+        <img class='img-fluid' src='website_screenshot.PNG' width=633 height=350>
+        <p>I love HTML/CSS, and have had a lot of fun coding it.</p>
+        <hr>
+      </section>
+      </div>
+
+      <div class='row'>
+      <section>
+        <h2>Airbnbs in Chicago</h2>
+        <img class='img-fluid' src='project1.PNG' width=633 height=350>
+        <p>In this group project, our team was tasked to be a consulting group looking at Airbnbs in Chicago. We found correlations and visualized them in our <a href='https://docs.google.com/presentation/d/1sBQlnOZzxg3gu_hlhzGttC8Fm7EZMo7bk-dthEt-WJc/edit?usp=sharing' target='_blank'>presentation</a>.</p>
+        <hr>
+      </section>
+      </div>
+
+      <div class='row'>
+      <section>
+        <h2>Heart Disease Presentation</h2>
+        <img class='img-fluid' src='project2.png' width=633 height=350>
+        <p>In this group project, our team was given data regarding heart disease. It included a variety of variables, and our task was to determine the statistically significant variables that would lead to heart disease. We also created predictive models and improved upon them in the <a href='https://docs.google.com/presentation/d/1ulGLS84UhT-75orD1XM-J9OZ8Es1h-BUmozs4hKQhSg/edit?usp=sharing' target='_blank'>presentation</a>.</p>
+      </section>
+      </div>
+    </div>
   </main>
 
-  <footer>
+  <footer style='text-align: center;'>
     <hr>
     <p>&#169; David Loewy 2023</p>
     <hr>
+    <div class='social_media' >
+      <a href="https://www.linkedin.com/in/davidloewy12/" class="fa fa-linkedin" target="_blank"></a>
+      <a href="https://github.com/David-Loewy/" class="fa fa-github" target="_blank"></a>
+      <a href="https://www.instagram.com/dav.loewy/" class="fa fa-instagram" target="_blank"></a>
+      <a href="https://www.facebook.com/profile.php?id=100070101855926" class="fa fa-facebook" target="_blank"></a>
+    </div>
   </footer>
-  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
