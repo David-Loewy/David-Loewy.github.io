@@ -176,10 +176,11 @@ body {
 
 /* Media query to shrink container-fluid width on larger screens */
 @media (min-width:0px) {
-    .welcome div {
+    body .welcome {
         margin-top: 200px;
+        margin-bottom: 100px;
     }
-    .arrow div {
+    body .arrow {
         margin-bottom: 500px;
     }
     .infotext {
