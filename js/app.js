@@ -36,6 +36,7 @@ hiddenElementsBottom.forEach((el) => observerBottom.observe(el));
 
 // On refresh, scroll to top and hide elements
 window.onload = function() {
+    setTimeout(() => {
     hiddenElementsLeft.forEach((el) => {
         el.classList.remove('showleft');
         console.log('id removed')
@@ -44,6 +45,7 @@ window.onload = function() {
         el.classList.remove('showbottom');
         console.log('id removed')
     });
+}, 10);
   };
 
 document.getElementById('Form').addEventListener('submit', function(event) {
