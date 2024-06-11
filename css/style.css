@@ -176,6 +176,12 @@ body {
 
 /* Media query to shrink container-fluid width on larger screens */
 @media (min-width:0px) {
+    .welcome div {
+        margin-top: 200px;
+    }
+    .arrow div {
+        margin-bottom: 500px;
+    }
     .infotext {
         margin-top: 20px;
         text-align: center;
