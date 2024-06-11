@@ -183,6 +183,9 @@ body {
     body .arrow {
         margin-bottom: 500px;
     }
+    body .contactForm {
+        margin-bottom: 300px;
+    }
     .infotext {
         margin-top: 20px;
         text-align: center;
