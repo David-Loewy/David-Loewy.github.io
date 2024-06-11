@@ -183,6 +183,10 @@ body {
     .footnav a {
         font-size: 1em;
     }
+    h2 {
+        font-size: .75em;
+    }
+
     body .nav-link.active {
         font-size: 1.25em;
     }
