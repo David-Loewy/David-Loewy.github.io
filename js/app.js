@@ -35,6 +35,7 @@ const hiddenElementsBottom = document.querySelectorAll('.hiddenbottom');
 hiddenElementsBottom.forEach((el) => observerBottom.observe(el));
 
 // On refresh, scroll to top and hide elements
+/*
 window.onload = function() {
     setTimeout(() => {
     hiddenElementsLeft.forEach((el) => {
@@ -47,6 +48,7 @@ window.onload = function() {
     });
 }, 10);
   };
+*/
 
 document.getElementById('Form').addEventListener('submit', function(event) {
       // Delay the reset to ensure formspree submission completes
