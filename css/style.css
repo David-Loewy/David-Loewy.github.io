@@ -1,0 +1,225 @@
+/* Recommended Bootstrap CSS*/
+body {
+    box-sizing: content-box;
+}
+/* End of recommended Bootstrap CSS*/
+
+/* Hide scrollbar
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+End of hide scrollbar*/
+
+html body {
+    background-color: #2b518a;
+    color: white;
+}
+
+body .nav-link {
+    color: #e6e6e6;
+    font-family: "League Spartan";
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+body .nav-link.active {
+    color: white;
+    font-size: 2em;
+}
+
+.highlight {
+    color: #28cbeb;
+    font-weight: 750;
+}
+
+.heading {
+    font-size: 7em;
+}
+
+#arrow {
+    margin-top: 20px;
+    width: 3vw;
+}
+
+.itemTitle {
+    color: #28cbeb;
+}
+
+.pic {
+    width: 50vw;
+}
+
+.welcome {
+    margin-top: 300px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.arrow {
+    margin-bottom: 400px;
+    text-align: center;
+}
+
+.work {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.contact {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.spacer {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.sectioninfo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sectioninfo a {
+    color: white;
+}
+
+.img {
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+#cert {
+    max-width: 70%;
+}
+
+#projectpic {
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+
+.contactForm {
+    max-width: 70%;
+}
+
+.contactForm label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.contactForm button {
+    margin-top: 20px;
+}
+
+.infotext {
+    text-align: left;
+    color: white;
+}
+
+.hiddenleft {
+    opacity: 0;
+    filter: blur(5x);
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+.hiddenbottom {
+    opacity: 0;
+    filter: blur(5x);
+    transform: translateY(-100%);
+    transition: 1s;
+}
+
+.showleft {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.showbottom {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+/* Keep navbar at bottom */
+body {
+    position: relative; /* Set body position to relative */
+  }
+
+  .footnav {
+    background-color: #203e69;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: 3px solid white;
+    position: fixed; /* Set navbar position to fixed */
+    bottom: 0; /* Position navbar at the bottom */
+    width: 100%; /* Make navbar full width */
+    z-index: 1000; /* Ensure navbar is above other elements */
+  }
+/* End of navbar */
+
+/* Media query to shrink container-fluid width on larger screens */
+@media (min-width:0px) {
+    .infotext {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .footnav a {
+        font-size: 1em;
+    }
+    body .nav-link.active {
+        font-size: 1.25em;
+    }
+}
+@media (min-width:768px) {
+    .infotext {
+        text-align: left;
+    }
+    .footnav a {
+        font-size: 1em;
+    }
+    body .nav-link.active {
+        font-size: 1.25em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectioninfo {
+        max-width: 70%; /* Adjust this value to your preference */
+
+    }
+    .footnav a {
+        font-size: 1.5em;
+    }
+    body .nav-link.active {
+        font-size: 2em;
+    }
+    .contactForm {
+        max-width: 50%
+    }
+}
+
+@media (min-width: 1600px) {
+    .sectioninfo {
+        max-width: 60%; /* Further adjust this value for even larger screens */
+    }
+    .contactForm {
+        max-width: 40%
+    }
+}
